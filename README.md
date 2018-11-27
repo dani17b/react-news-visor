@@ -31,5 +31,7 @@ Once the api is booted, just launch the npm start command to start the web on po
 npm start
 ```
 
+[![N|Solid](https://github.com/dani17b/react-news-visor/blob/master/example/example.jpg?raw=true)](http://localhost:8081)
+
 ### License
 MIT
