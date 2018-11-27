@@ -1,6 +1,6 @@
 # React News Visor
 
-[![N|Solid](https://github.com/dani17b/react-news-visor/blob/master/src/containers/home/containers/headerContainer/img/logo.png?raw=true =100x20)](https://www.altia.es/)
+[![N|Solid](https://www.altia.es/themes/custom/rhythm_sub/logo.png)](https://www.altia.es/)
 
 React News Visor, is a news viewer implemented with ReactJS to show as an example of a web application using the latest web technologies.
 This example consists in making a news reader that is possible to control through the user's pupil in a natural way.
