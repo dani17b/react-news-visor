@@ -1,0 +1,78 @@
+:local(.header){
+    height: 80px;
+    border-bottom: 1px solid #C8C7C9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    flex-direction: column;
+    z-index: 99;
+    position: relative;
+}
+
+:local(.headerIco){
+    background-image: url('./img/logo.png');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 7.5px;
+    background-size: contain;
+}
+
+:local(.headerText){
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: smaller;
+    color : $secondary-color;
+    margin-top: 7.5px;
+}
+
+:local(.headerButtons){
+    height: 45px;
+    position: absolute;
+    right: 15px;
+}
+
+:local(.headerButton){
+    float: right;
+    height: 45px;
+    margin-left: 7.5px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    border: 1px solid #D7D7D7;
+    transition: 0.5s ease all;
+}
+
+:local(.headerButton:hover){
+    background-color: #D7D7D7;
+}
+
+:local(.headerButtonIco){
+    width: 32px;
+    height: 32px;
+    margin-right: 7.5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #333;
+}
+
+:local(.headerButtonIcoRecalibrate){
+    background-image : url('./img/controls.svg');
+}
+
+:local(.headerButtonIcoMonitor){
+    background-image : url('./img/debug.svg');
+}
+
+:local(.headerButtonText){
+    
+}

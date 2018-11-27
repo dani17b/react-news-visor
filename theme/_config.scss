@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('/theme/fonts/HVD Fonts - BrandonGrotesque-Regular.otf');
+    font-style: normal;
+    font-weight:  700;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque Bold';
+    src: url('/theme/fonts/HVD Fonts - BrandonGrotesque-Bold.otf');
+    font-style: bold;
+    font-weight:  700;
+}
+
+$main-color: rgba(0,0,0,1);
+$secondary-color: #D7D7D7;
+$tertiary-color : #333;
+$main-font: Brandon Grotesque;
+$main-font-bold: Brandon Grotesque Bold;
+$text-color: #333333;
+$secondary-text-color: #A7A7A7;
+$primary-color :#9be2ca;
+$fill-color : #ecf0f1;
+
+$big-size : 1048px;
+$medium-size : 720px;
+$small-size : 400px;
+
+body,html{
+    font-family: $main-font;
+    margin : 0;
+    padding: 0;
+    overflow: hidden;
+}

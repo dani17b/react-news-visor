@@ -1,0 +1,68 @@
+:local(.container) {
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 350px);
+    border: 1px solid #333;
+}
+
+:local(.containerInCalibrationTitle){
+    text-transform: uppercase;
+    display: block;
+    margin: 15px;
+    margin-bottom: 0;
+}
+
+:local(.containerInCalibrationDescription){
+    margin-top: 15px;
+    font-size: smaller;
+    color: #D7D7D7;
+    text-transform: uppercase;
+    width: 270px;
+    display: block;
+    margin-left: 15px;
+}
+
+:local(.containerInCalibrationButton){
+    width: calc(100% - 30px);
+    height: 35px;
+    cursor: pointer;
+    margin-top: 35px;
+    border: 1px solid #333;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    opacity: 1;
+    transition: 0.5s ease all;
+    position: absolute;
+    bottom: 15px;
+    margin-left: 15px;
+}
+
+:local(.containerInCalibrationButton:hover){
+    background-color: #333;
+}
+
+:local(.containerInCalibrationButtonText){
+    text-transform: uppercase;
+    text-align: center;
+    font-size: small;
+}
+
+:local(.containerInCalibrationButton:hover .containerInCalibrationButtonText){
+    color: white;
+}
+
+#webgazerVideoFeed, #webgazerFaceOverlay{
+    position: absolute !important;
+    width: 500px !important;
+    height: 280px !important;
+    top: calc(50% - 106px) !important;
+    left: calc(50% - 115px) !important;
+    /* display: none; */
+}
+
+#webgazerFaceFeedbackBox{
+    display: none ! important;
+}
