@@ -60,7 +60,11 @@
     height: 280px !important;
     top: calc(50% - 106px) !important;
     left: calc(50% - 115px) !important;
-    display: none ! important;
+    opacity: 1;
+}
+
+#webgazerGazeDot {
+    opacity: 1;
 }
 
 #webgazerFaceFeedbackBox{

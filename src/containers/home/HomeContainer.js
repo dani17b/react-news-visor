@@ -48,7 +48,6 @@ class HomeContainer extends React.Component {
 
   finishCalibration(){
       this.actions.endCalibration();
-      this.actions.getNews();
   }
 
   detectTrackPoint(x, y){
@@ -106,19 +105,21 @@ class HomeContainer extends React.Component {
   checkVideoCalibration(isCalibrationMode){
       let webgazerVideoFeed = window.document.getElementById("webgazerVideoFeed");
       let webgazerFaceOverlay = window.document.getElementById("webgazerFaceOverlay");
+      let webgazerGazeDot = window.document.getElementById("webgazerGazeDot");
+      
 
       if(webgazerVideoFeed == null || webgazerFaceOverlay == null){
           return;
       }
 
       if(!isCalibrationMode){
-        webgazerVideoFeed.style.display = "none ! important";
-
-        debugger;
-        webgazerFaceOverlay.style.display = "none ! important";
+        webgazerVideoFeed.style.opacity = "0";
+        webgazerFaceOverlay.style.opacity = "0";
+        webgazerGazeDot.style.opacity = "0";
       }else{
-        webgazerVideoFeed.style.display = "block ! important";
-        webgazerFaceOverlay.style.display = "block ! important";
+        webgazerVideoFeed.style.opacity = "1";
+        webgazerFaceOverlay.style.opacity = "1";
+        webgazerGazeDot.style.opacity = "1";
       }
   }
 
@@ -166,11 +167,7 @@ class HomeContainer extends React.Component {
                 
                 {this.props.home.mode != "calibration" &&
                     <div className={styles.content} ref="content">
-                        {this.props.home.news.map((item) => 
-                            <div className={styles.contentItem} key={item.url}>
-                                <ArticleContainer article={item}/>
-                            </div>
-                        )}
+                        {/* TODO renderizar lista de contenidos una vez se finaliza la calibracion */}
                     </div>
                 }
             </div>

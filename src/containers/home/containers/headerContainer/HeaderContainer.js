@@ -14,10 +14,10 @@ class HeaderContainer extends React.Component {
             <span className={styles.headerText}>Visor de noticias</span>
             {this.props.showButtons &&
                 <div className={styles.headerButtons}>
-                    <div className={styles.headerButton}>
+                    {/* <div className={styles.headerButton}>
                         <span className={styles.headerButtonIco + " " + styles.headerButtonIcoMonitor}></span>
                         <span className={styles.headerButtonText}>Mostrar monitor</span>
-                    </div>
+                    </div> */}
                     <div className={styles.headerButton} onClick={this.props.recalibrate}>
                         <span className={styles.headerButtonIco + " " + styles.headerButtonIcoRecalibrate}></span>
                         <span className={styles.headerButtonText}>Recalibrar</span>
