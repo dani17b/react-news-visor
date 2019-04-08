@@ -112,13 +112,11 @@ class HomeContainer extends React.Component {
       }
 
       if(!isCalibrationMode){
-        webgazerVideoFeed.style.display = "none ! important";
-
-        debugger;
-        webgazerFaceOverlay.style.display = "none ! important";
+        webgazerVideoFeed.style.opacity = 0;
+        webgazerFaceOverlay.style.opacity = 0;
       }else{
-        webgazerVideoFeed.style.display = "block ! important";
-        webgazerFaceOverlay.style.display = "block ! important";
+          webgazerVideoFeed.style.opacity = 1;
+          webgazerFaceOverlay.style.opacity = 1;
       }
   }
 

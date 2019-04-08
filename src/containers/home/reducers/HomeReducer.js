@@ -2,8 +2,8 @@ import * as types from '../../../constants/ActionTypes';
 
 const initialState = {
   mode : "calibration",
-  debugActive : false,
-  showMonitor : false,
+  debugActive : true,
+  showMonitor : true,
   loading : false,
   news : [],
 };

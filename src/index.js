@@ -6,7 +6,7 @@ import thunkMiddleware from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { Route } from 'react-router';
 import { routerReducer, ConnectedRouter, routerMiddleware, replace } from 'react-router-redux';
-import createHistory from 'history/createBrowserHistory';
+const createHistory = require("history").createBrowserHistory;
 import * as reducers from './reducers';
 import { HomeContainer} from './containers';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -69,21 +69,3 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
-
-/*ReactDOM.render(
-    <MuiThemeProvider theme={theme}>
-      <HomeContainer />
-    </MuiThemeProvider>
-    ,
-    document.getElementById('root')
-);*/
-/* ReactDOM.render(
-  <Provider store={store}>
-    <ConnectedRouter history={history}>
-      <div>
-        <Route exact path="/" component={HomeContainer}/>
-      </div>
-    </ConnectedRouter>
-  </Provider>,
-  document.getElementById('root')
-); */
